@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;800&display=swap');
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
+
+.navbar-brand {
+  font-size: 1.7rem !important;
+}
+
+/* div#map {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+} */
+
+@media (min-width: 768px) {
+  .news-input {
+    max-width: 30%;
+  }
+  .news-container > div {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.4rem !important;
+  }
+}

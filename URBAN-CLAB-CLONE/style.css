@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;800&display=swap');
 * {
+  user-select: none;
   letter-spacing: 0.4px;
   font-family: 'Raleway', sans-serif;
 }
@@ -14,8 +15,42 @@ body {
   overflow-x: hidden;
 }
 
+button,
+input {
+  box-shadow: none !important;
+}
+
+button {
+  transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: scale(0.98);
+}
+
+.seperater {
+  background-color: #f0f0f0;
+  height: 10px;
+}
+
 .bg-black {
   background-color: #000 !important;
+}
+
+.text-black {
+  color: #000;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
 }
 
 .shadow-white {
@@ -95,4 +130,30 @@ select {
 /* Transition */
 .select:hover::after {
   color: #000;
+}
+
+/* SOCAIL LINKS */
+.social-links i {
+  color: #fff;
+  transition: color 0.1s ease-in-out;
+}
+
+.social-links i.fa-facebook:hover {
+  color: #2470a0;
+}
+
+.social-links i.fa-pinterest:hover {
+  color: red;
+}
+
+.social-links i.fa-instagram:hover {
+  color: #ff96ad;
+}
+
+.social-links i.fa-linkedin:hover {
+  color: #58d5d3;
+}
+
+.social-links i.fa-twitter:hover {
+  color: #0881a3;
 }
